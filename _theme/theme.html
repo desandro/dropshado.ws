@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{block:PostTitle}{PostTitle} &middot; {/block:PostTitle}{Title}</title>
+  
+  <meta name="description" content="{Description}. By David DeSandro" /> 
+
+  <script src="http://use.typekit.com/uzs6xfu.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
+  <link rel="alternate" type="application/rss+xml" title="dropshado.ws" href="http://feeds.feedburner.com/dropshadows" /> 
+
+<style media="screen">
+
+/**** HTML5 blocks ****/
+section, header, footer, article, figure, figcaption, aside, nav {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E8E8E8;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.6em;
+  color: #444;
+}
+
+
+
+h1, h2, h3, h4, h5, h6,
+article aside time,
+article aside .tags,
+#page-header .options a,
+#pagination {
+  font-family: "purista-web-1","purista-web-2", Georgia, serif;
+}
+
+p, ul, ol, pre {
+  margin-bottom: 0.8em;
+}
+
+#wrap {
+  width: 830px;
+  margin: 30px auto 30px;
+}
+
+/* page-header */
+
+#page-header {
+  position: relative;
+  height: 170px;
+  margin-bottom: 2px;
+
+}
+
+#page-header h1 {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 136px;
+  position: absolute;
+  left: 0px;
+  top: 60px;
+}
+
+#page-header h1 a {
+  color: #FFF;
+}
+
+
+#page-header h1, #page-header h2, #page-header h3 {
+
+}
+
+#page-header h2 {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  font-weight: 800;
+  
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #058;
+}
+
+
+#page-header h3 {
+  position: absolute;
+  top: 120px;
+  right: 60px;
+  font-weight: 300;
+  font-size: 19px;
+  font-style: italic;
+  color: #AAA;
+}
+
+
+#page-header h2 {
+
+} 
+
+#page-header .options {
+  position: absolute;
+  right: 0;
+}
+
+#page-header .options > * {
+  display: inline-block;
+}
+
+#page-header .options .button {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-right: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+#search-field input[type="text"] {
+  -webkit-appearance: searchfield;
+}
+
+pre {
+  background: #111;
+  padding: 1.0em;
+  line-height: 1.4em;
+  overflow: auto;
+  color: #FFF;
+}
+
+code {
+  font-family: Monaco, monospace;
+  font-size: 90%;
+}
+
+blockquote code { font-style: normal; }
+
+a {
+  color: #D73;
+  text-decoration: none;
+}
+a:hover {
+  color: #058;
+}
+
+a img {
+  border: none;
+}
+
+
+
+article {
+
+  padding: 30px;
+  background: #FFF;
+  margin-bottom: 2px;
+}
+
+article:after {
+  content: '';
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+article h1 {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 0.8em;
+  line-height: 1.2em;
+  color: #888;
+}
+
+article .link h1 {
+  font-size: 16px;
+  font-style: italic;
+}
+
+article .content {
+  width: 560px;
+float: left;
+}
+
+article .content ul,
+article .content ol {
+  margin-left: 1.4em;
+}
+
+article .content li {
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 1.0em;
+  font-size: 16px;
+  color: #888;
+}
+
+blockquote {
+  padding-left: 1.0em;
+  margin-left: 1.0em;
+  font-style: italic;
+  border-left: 2px solid #E8E8E8;
+}
+
+article aside {
+  width: 180px;
+  float: left;
+  margin-left: 30px;
+}
+
+article aside time {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+article aside .tags {
+  list-style: none;
+  font-style: italic;
+  font-weight: 400;
+}
+article aside .tags a {
+  color: #BBB;
+}
+article aside .tags a:hover {
+  color: #058;
+}
+
+
+
+
+/* Pagination */
+
+#pagination {
+  background: #FFF;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+}
+
+#pagination .next,
+#pagination .previous {
+  position: absolute;
+  top: 0;
+}
+#pagination .next {
+  right: 0;
+}
+
+#pagination a {
+  display: block;
+  width: 120px;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#pagination .next a {
+  border-left: 3px solid #E8E8E8;
+}
+#pagination .previous a {
+  border-right: 3px solid #E8E8E8;
+}
+
+#pagination a:hover {
+    background: #058;
+  color: #FFF;
+}
+
+#pagination .next a:after,
+#pagination .next a:before,
+#pagination .previous a:after,
+#pagination .previous a:before,
+#pagination .current:before,
+#pagination .current:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  border-style: solid;
+}
+#pagination .previous a:after {
+  border-color: transparent #E8E8E8;
+  border-width: 15px 15px 15px 0;
+  right: 0;
+}
+#pagination .previous a:before {
+  border-color: #E8E8E8 transparent ;
+  border-width: 15px 15px 15px 0;
+  left: 0;
+}
+#pagination .current:before {
+  border-color: transparent #FFF;
+  border-width: 15px 15px 15px 0 ;
+  left: 108px;
+}
+#pagination .next a:after {
+  border-color: #E8E8E8 transparent;
+  border-width: 15px 0 15px 15px;
+  right: 0;
+}
+#pagination .next a:before {
+  border-color: transparent #E8E8E8;
+  border-width: 15px 0 15px 15px;
+  left: 0;
+}
+#pagination .current:after {
+  border-color: transparent #FFF;
+  border-width: 15px 0 15px 15px;
+  right: 108px;
+}
+
+
+#pagination .current {
+    text-align: center;
+  font-style: italic;
+  color: #AAA;
+}
+
+/* PrettyPrint */
+
+pre .str { color: #79BD56; } /* string */
+pre .kwd { color: #E39B79;  } /* keyword */
+pre .com { color: #888; } /* comment - skyblue */
+pre .typ { color: #98fb98; } /* type    - lightgreen */
+pre .lit { color: #DE8E50; } /* literal */
+pre .pun { color: #FEA; }    /* punctuation */
+pre .pln { color: #fff; }    /* plaintext */
+pre .tag { color: #A1C8FD;  } /* html/xml tag    - lightyellow*/
+pre .atn { color: #bdb76b; } /* attribute name  - khaki*/
+pre .atv { color: #ffa0a0; } /* attribute value - pink */
+pre .dec { color: #98fb98; } /* decimal         - lightgreen */
+
+
+/**** Footer ****/
+
+#site-footer {
+  padding-top: 5.0em;
+  text-align: center;
+  font-size: 11px;
+}
+
+#site-footer ul {
+  list-style: none;
+}
+
+#site-footer li {
+  display: inline;
+  padding: 0 1.5em;
+}
+
+#site-footer a { color: #888; }
+#site-footer a:hover { color: #058; }
+
+
+</style>
+
+
+
+</head>
+<body>
+
+  <div id="wrap">
+    
+    <header id="page-header">
+      <hgroup>
+        <h1><a href="/">dropshado.ws</a></h1>
+        <h2>{Description}</h2>
+        <h3>by David DeSandro</h3>
+      </hgroup>
+
+      <div class="options">
+        <div class="button"><a href="http://feeds.feedburner.com/dropshadows">{lang:RSS feed}</a></div>
+        <div class="button"><a href="/archive">{lang:Archive}</a></div>
+      
+        <form id="search-field" action="/search" method="get">
+          <input type="search" name="q" value="{SearchQuery}" />
+        </form>
+      </div>
+      
+    </header>
+    
+    <section id="posts">
+      {block:Posts}
+        <article id="{PostID}">
+          {block:Text}
+            <div class="content text">
+              {block:Title}<h1>{Title}</h1>{/block:Title}
+              <div class="copy">
+                {Body}
+              </div>
+            </div>
+          {/block:Text}
+          {block:Photo}
+            <figure class="content photo">
+              {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}">{LinkCloseTag}
+              {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+            </figure>
+          {/block:Photo}
+          {block:Link}
+            <div class="content link">
+              <h1><a href="{URL}" {Target}>{Name}</a></h1>
+              {block:Description}
+                <div class="copy">
+                  {Description}
+                </div>
+              {/block:Description}
+            </div>
+          {/block:Link}
+          {block:Quote}
+            <div class="content quote">
+              <blockquote>
+                <p>{Quote}</p>
+              </blockquote>
+              <p>{block:Source}&mdash; {Source}{/block:Source}</p>
+            </div>
+          {/block:Quote}
+          {block:Video}
+            <figure class="content video">
+              {Video-500}
+              {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+            </figure>
+          {/block:Video}
+          {block:Audio}
+            <figure class="content audio">
+              {block:AlbumArt}<img class="album-art" src="{AlbumArtURL}" />{/block:AlbumArt}
+              {AudioPlayerBlack}
+              {block:Artist}{Artist}{/block:Artist}
+              {block:TrackName}<em>{TrackName}</em>{/block:TrackName}
+              {block:Album}{Album}{/block:Album}
+              {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+            </figure>
+          {/block:Audio}
+          
+          <aside>
+            <time><a href="{Permalink}">{DayOfMonth} {ShortMonth} {Year}</a></time>
+            {block:HasTags}
+              <ul class="tags">
+                {block:Tags}
+                  <li><a href="{TagURL}">{Tag}</a></li>
+                {/block:Tags}
+              </ul>
+            {/block:HasTags}
+          </aside>
+          
+        </article>
+      {/block:Posts}
+    </section> <!-- #posts -->
+    
+    {block:Pagination}
+      <nav id="pagination">
+        {block:PreviousPage}
+          <div class="previous">
+            <a href="{PreviousPage}">Previous</a>
+          </div>
+        {/block:PreviousPage}
+        {block:NextPage}
+          <div class="next">
+            <a href="{NextPage}">Next</a>
+          </div>
+        {/block:NextPage}
+        <div class="current">
+          Page {CurrentPage} of {TotalPages}
+        </div>
+      </nav>
+    {/block:Pagination}
+    
+    <footer id="site-footer">
+      <ul>
+        <li><a href="http://desandro.com/">desandro.com</a></li>
+        <li><a href="http://twitter.com/desandro">@desandro</a></li>
+        <li><a href="http://github.com/desandro">github.com/desandro</a></li>
+      </ul>
+    </footer>
+    
+  </div><!-- #wrap -->
+  
+  <script src="http://static.tumblr.com/sqdbzpv/vx5l70919/prettify-pre-mod.js"></script>
+  <script>
+    // syntax highlighting
+    window.addEventListener('load', prettyPrint, false);
+
+    // Google Analytics
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-592624-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</body>
+</html>
