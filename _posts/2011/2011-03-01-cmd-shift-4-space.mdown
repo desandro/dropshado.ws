@@ -6,6 +6,8 @@ tags: OS X, Phil Dokas
 format: markdown
 generator: Tumblr Gem
 
+layout: default
+
 ---
 
 [Phil Dokas](http://jetless.org/) followed up [with](https://twitter.com/pdokas/status/42655011544645632):
