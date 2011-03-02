@@ -1,0 +1,13 @@
+---
+
+title: REGULAR_TITLE
+type: regular
+tags: 
+format: markdown
+generator: Tumblr Gem
+
+layout: default
+
+---
+
+REGULAR_CONTENT
