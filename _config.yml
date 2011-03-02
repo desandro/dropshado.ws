@@ -1,4 +1,7 @@
+# Jekyll
 permalink: none
+paginate: 10
 
+# site-wide data
 name: dropshado.ws
 description: Front-end development minutiae

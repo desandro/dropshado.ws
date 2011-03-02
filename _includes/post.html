@@ -1,0 +1,54 @@
+<article>
+  {% if page.is_index %}{% assign content = post.content %}{% endif %}
+  {% if post.type == 'regular' %}
+    <div class="content text">
+      {% if post.title %}<h1>{{ post.title }}</h1>{% endif %}
+      <div class="copy">
+        {{ content }}
+      </div>
+    </div>
+  {% else %}
+  {block:Link}
+    <div class="content link">
+      <h1><a href="{URL}" {Target}>{Name}</a></h1>
+      {block:Description}
+        <div class="copy">
+          {Description}
+        </div>
+      {/block:Description}
+    </div>
+  {/block:Link}
+  {block:Quote}
+    <div class="content quote">
+      <blockquote>
+        <p>{Quote}</p>
+      </blockquote>
+      <p>{block:Source}&mdash; {Source}{/block:Source}</p>
+    </div>
+  {/block:Quote}
+  {block:Photo}
+    <figure class="content photo">
+      {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}">{LinkCloseTag}
+      {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+    </figure>
+  {/block:Photo}
+  {block:Video}
+    <figure class="content video">
+      {Video-500}
+      {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+    </figure>
+  {/block:Video}
+  {% endif %}
+  
+  <aside>
+    <time><a href="{{ post.url }}">{DayOfMonth} {ShortMonth} {Year}</a></time>
+    {if:HasTags}
+      <ul class="tags">
+        {block:Tags}
+          <li><a href="{TagURL}">{Tag}</a></li>
+        {/block:Tags}
+      </ul>
+    {/block:HasTags}
+  </aside>
+  
+</article>
