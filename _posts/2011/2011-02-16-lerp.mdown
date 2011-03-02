@@ -1,0 +1,25 @@
+---
+
+title: lerp
+type: regular
+tags: js
+format: markdown
+generator: Tumblr Gem
+
+layout: default
+
+---
+
+Here's a basic utility function I've been using to calculate positions in a transforming object with multiple transforms. I know the start and end positions of each transform -- this returns a value in-between given a percentage.
+
+    // returns interpolated value between
+    // A and B, where A = 0%, and B = 100%
+    var lerp = function( a, b, percent ) {
+      return a + percent * ( b - a );
+    };
+    
+    lerp( -10, 180, 0.5 ) // returns 85
+
+Lerp is short for [linear interpolation](http://en.wikipedia.org/wiki/Linear_interpolation).  
+
+Nothing too impressive, but I'm saving this 'cause I forget it every time I need it.

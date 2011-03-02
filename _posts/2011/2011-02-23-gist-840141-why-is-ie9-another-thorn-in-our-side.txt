@@ -5,7 +5,7 @@ type: link
 tags: gist, js
 generator: Tumblr Gem
 
-description: "margin-top or marginTop? When to use lower-case and camel-case property names in JavaScript." by Louis Remi-Babe
+description: margin-top or marginTop? When to use lower-case and camel-case property names in JavaScript. by Louis Remi-Babe
 
 layout: default
 
