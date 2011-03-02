@@ -1,0 +1,13 @@
+---
+
+name: gist 840141 - Why is IE9 Another Thorn in our Side - GitHub
+type: link
+tags: gist, js
+generator: Tumblr Gem
+
+description: "margin-top or marginTop? When to use lower-case and camel-case property names in JavaScript." by Louis Remi-Babe
+
+layout: default
+
+---
+https://gist.github.com/840141
