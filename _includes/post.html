@@ -7,25 +7,25 @@
         {{ content }}
       </div>
     </div>
-  {% else %}
-  {block:Link}
+  {% elsif post.type == 'link' %}
     <div class="content link">
-      <h1><a href="{URL}" {Target}>{Name}</a></h1>
-      {block:Description}
+      <h1><a href="{{ content }}">{{ post.name }}</a></h1>
+      {% if post.description %}
         <div class="copy">
-          {Description}
+          {{ post.description }}
         </div>
-      {/block:Description}
+      {% endif %}
     </div>
-  {/block:Link}
-  {block:Quote}
+  {% elsif post.type == 'quote' %}
     <div class="content quote">
       <blockquote>
-        <p>{Quote}</p>
+        <p>{{ content }}</p>
       </blockquote>
-      <p>{block:Source}&mdash; {Source}{/block:Source}</p>
+      {% if post.source %}
+        <p>&mdash; {{ post.source }}</p>
+      {% endif %}
     </div>
-  {/block:Quote}
+  {% else %}
   {block:Photo}
     <figure class="content photo">
       {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}">{LinkCloseTag}
@@ -41,14 +41,14 @@
   {% endif %}
   
   <aside>
-    <time><a href="{{ post.url }}">{DayOfMonth} {ShortMonth} {Year}</a></time>
-    {if:HasTags}
+    <time><a href="{{ post.url }}">{{ post.date | date:'%d %b %Y' }}</a></time>
+    {% if post.tags %}
       <ul class="tags">
-        {block:Tags}
-          <li><a href="{TagURL}">{Tag}</a></li>
-        {/block:Tags}
+        {% for tag in post.tags %}
+          <li><a href="#">{{ tag }}</a></li>
+        {% endfor %}
       </ul>
-    {/block:HasTags}
+    {% endif %}
   </aside>
   
 </article>

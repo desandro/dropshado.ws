@@ -6,6 +6,8 @@ tags: OS X, Phil Dokas
 format: markdown
 generator: Tumblr Gem
 
+layout: default
+
 ---
 
 Again, via [Phil Dokas](https://twitter.com/pdokas/status/42655173935497216).

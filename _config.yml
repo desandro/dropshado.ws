@@ -1,6 +1,6 @@
 # Jekyll
-permalink: none
-paginate: 10
+permalink: /post/:title.html
+paginate: 15
 
 # site-wide data
 name: dropshado.ws

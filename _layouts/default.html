@@ -1,26 +1,10 @@
 {% include header.html %}
+
+
+    {% assign post = page %}
     
     <section id="posts">
-      {block:Posts}
-        {% include post.html %}
-      {/block:Posts}
+      {% include post.html %}
     </section> <!-- #posts -->
     
-    {block:Pagination}
-      <nav id="pagination">
-        {block:PreviousPage}
-          <div class="previous">
-            <a href="{PreviousPage}">Previous</a>
-          </div>
-        {/block:PreviousPage}
-        {block:NextPage}
-          <div class="next">
-            <a href="{NextPage}">Next</a>
-          </div>
-        {/block:NextPage}
-        <div class="current">
-          Page {CurrentPage} of {TotalPages}
-        </div>
-      </nav>
-    {/block:Pagination}
-    
+{% include footer.html %}
