@@ -5,7 +5,7 @@ is_index: true
 
 {% include header.html %}
 
-  {% for post in site.posts limit:paginator.per_page %}
+  {% for post in site.posts reversed limit:paginator.per_page %}
     {% include post.html %}
   {% endfor %}
 

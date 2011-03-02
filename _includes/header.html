@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>{block:PostTitle}{PostTitle} &middot; {/block:PostTitle} {{ site.name }}</title>
+  <title>{% if page.title %}{{ page.title }} &middot; {% endif %} {{ site.name }} ! Jekyll twin</title>
   
   <meta name="description" content="{{ site.description }}. By David DeSandro" /> 
 
