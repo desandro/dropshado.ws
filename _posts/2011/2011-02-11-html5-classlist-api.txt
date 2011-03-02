@@ -1,0 +1,17 @@
+---
+name: HTML5 classList API
+type: link
+tags: js
+generator: Tumblr Gem
+
+layout: default
+
+description: |
+            > The classList object, added to all nodes within the DOM, provides developers methods by which to add, remove, and toggle CSS classes on a node.  classList also allows developers to check if a CSS class has been assigned to a given node.
+
+            A very awesome HTML5 API. Finally, a native way to add, remove, and toggle classes. Looks like only Firefox and Chrome currently support it. Discovered within this [promising commit to jQuery by Dominic Barnes](https://github.com/jquery/jquery/pull/228) via [Louie Remi Babe](https://twitter.com/louis_remi/status/36106458009444352).
+
+            See also Remy Sharp's [polyfill for classList](https://github.com/remy/polyfills/blob/master/classList.js).
+
+---
+http://davidwalsh.name/classlist

@@ -1,0 +1,15 @@
+---
+name: GitHub Flavored TextMate Preview
+type: link
+tags: TextMate, gitrepo
+generator: Tumblr Gem
+
+description: |
+            > It allows you to see READMEs as they will be styled in GitHub
+            
+            Oh, you can preview Markdown documents in TextMate (Cmd + Opt + Ctrl + P), and here's a setting to replicate GitHub README style - which is easily better than all the default styles included with TextMate (Um Halloween?).
+
+layout: default
+
+---
+https://github.com/kneath/github_textmate_preview
