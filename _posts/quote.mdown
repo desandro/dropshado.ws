@@ -1,6 +1,5 @@
 ---
 
-title: QUOTE_TITLE
 type: quote
 tags: 
 format: markdown

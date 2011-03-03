@@ -32,7 +32,7 @@
 
   <h1>api</h1>
   
-  <script src="http://dropshado.ws/api/read/json?filter=none"></script>
+  <script src="http://dropshado.ws/api/read/json?start=40&filter=none"></script>
   
   <script>
     function init() {
@@ -49,7 +49,7 @@
             filename = post['date-gmt'].split(' ')[0],
             content = [
               '---', 
-              'generator: Tumblr Gem', 
+              // 'generator: Tumblr Gem', 
               'layout: default',
               'type: ' + post.type
             ],
@@ -64,6 +64,7 @@
             typeContent.push(
               'format: markdown',
               'title: ' + post['regular-title'].replace(/:/g,''),
+              '',
               '---',
               post['regular-body'].replace(/</g,'&lt;')
             );
