@@ -1,0 +1,17 @@
+---
+layout: default
+type: link
+tags: HTTP, Paul Irish
+name: Using a protocol-independent absolute path
+description: |
+            > Using a protocol-independent absolute path:
+            >
+            >     <img src="//domain.com/img/logo.png"/>
+            >
+            >If the browser is viewing an page in SSL through HTTPS, then it'll request that asset with the https protocol, otherwise it'll request it with HTTP.
+
+            &mdash; Paul Irish
+
+            As seen in [this commit for HTML5 Boilerplate](http://github.com/paulirish/html5-boilerplate/commit/afaf14304e55dac23b2f4c38b6c5f67a7ddb70c8)
+---
+http://stackoverflow.com/questions/954327/hidden-features-of-html/960111#960111

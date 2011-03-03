@@ -1,0 +1,11 @@
+---
+layout: default
+type: link
+tags: jquery, js
+name: JQuery Core Style Guidelines - jQuery JavaScript Library
+description: |
+            via [Blake Walters](http://twitter.com/markupboy/status/23271944224):
+            
+            > lots of good coding rules to live by here in the jquery core style guidelines doc - http://mrkp.me/20
+---
+http://docs.jquery.com/JQuery_Core_Style_Guidelines

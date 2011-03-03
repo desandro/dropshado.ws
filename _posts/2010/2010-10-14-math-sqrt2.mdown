@@ -1,0 +1,16 @@
+---
+layout: default
+type: regular
+tags: John Schulz, js
+format: markdown
+title: Math.SQRT2
+
+---
+The Math object has a constant for the square root of 2 AND half root 2
+
+    Math.SQRT2
+    // 1.4142135623730951
+    Math.SQRT1_2
+    // 0.7071067811865476
+
+via [John Schulz](http://github.com/jfsiii/close-pixelate/commit/845673ee59a1b19f7610f1bc5829b11222a4e434#L0R92)

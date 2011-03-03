@@ -1,0 +1,14 @@
+---
+layout: default
+type: link
+tags: HTML, syntax, markup
+name: HTML 5 Reference  3.2.3 Attributes
+description: |
+          > There are four slightly different syntaxes that may be used for attributes in HTML: empty, unquoted, single-quoted and double-quoted.
+
+          This can be useful for escaping quotes in attributes, as seen in this example from the [recent jQuery 1.4.3 release notes](http://blog.jquery.com/2010/10/16/jquery-143-released/):
+
+              <div data-options='{"name":"John"}'></div>
+
+---
+http://dev.w3.org/html5/html-author/#attributes

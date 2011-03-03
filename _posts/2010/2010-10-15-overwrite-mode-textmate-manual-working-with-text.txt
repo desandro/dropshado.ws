@@ -1,0 +1,13 @@
+---
+layout: default
+type: link
+tags: TextMate
+name: Overwrite Mode - TextMate Manual » Working With Text
+description: |
+            Perhaps the most frightening event in word processing is enabling overwrite mode and not knowing how to turn it off. Like King Midas, anything you touch gets annihilated. TextMate (all too) conveniently has a keystroke for overwrite mode: Cmd + Opt + O. Beware.
+
+            This is a scare that I first encountered in MS Word (probably Office 98), where the only indication was a tiny "OVR" in the bottom status bar. It was a terrifying experience then, and when I accidentally enabled it again all these years later in TextMate, the old "PANIC NOW" feeling was fresh in my mind.
+
+            That said, this is an awesome prank to pull.
+---
+http://manual.macromates.com/en/working_with_text#overwrite_mode

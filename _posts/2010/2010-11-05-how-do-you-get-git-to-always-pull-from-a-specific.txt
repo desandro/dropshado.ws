@@ -1,0 +1,21 @@
+---
+layout: default
+type: link
+tags: git
+name: How do you get git to always pull from a specific branch? - Stack Overflow
+description: |
+            [Head](http://stackoverflow.com/users/30951/head):
+
+            > If you prefer, you can set these options via the commmand line (instead of editing the config file) like so: 
+            >
+            >     $ git config branch.master.remote origin 
+            >     $ git config branch.master.merge refs/heads/master
+            >
+            >Or, if you're like me, and want this to be the default across all of your projects, including those you might work on in the future, then add it as a global config setting: 
+            >
+            >     $ git config --global branch.master.remote origin 
+            >     $ git config --global branch.master.merge refs/heads/master
+
+            I'm trying out the global option as I never remember how to do this.
+---
+http://stackoverflow.com/questions/658885/how-do-you-get-git-to-always-pull-from-a-specific-branch/2308127#2308127

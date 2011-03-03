@@ -1,0 +1,11 @@
+---
+layout: default
+type: link
+tags: html, html5, markup
+name: Type attribute in script element
+description: |
+          > The `type` attribute gives the language of the script or format of the data. If the attribute is present, its value must be a valid MIME type. The `charset` parameter must not be specified. The default, which is used if the attribute is absent, is `"text/javascript"`
+
+          To resolve a [question in the HTML5 Boilerplate repo](http://github.com/paulirish/html5-boilerplate/commit/637d25b16d4e2ef7eaf3191bef84eaa07ec5a0a8#commitcomment-178533). Important to note is that the [details provided on w3schools](http://www.w3schools.com/html5/tag_script.asp) misleads that the `type` attribute is required.
+---
+http://dev.w3.org/html5/spec-author-view/scripting-1.html#script
