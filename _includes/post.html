@@ -25,13 +25,16 @@
         <p>&mdash; {{ post.source }}</p>
       {% endif %}
     </div>
-  {% else %}
-  {block:Photo}
+  {% elsif post.type == 'photo' %}
     <figure class="content photo">
-      {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}">{LinkCloseTag}
-      {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
+      {% if post.click-through-url %}<a href="{{ post.click-through-url }}">{% endif %}
+        <img src="{{ content }}" />
+      {% if post.click-through-url %}</a>{% endif %}
+      {% if post.caption %}
+        <figcaption>{{ post.caption }}</figcaption>
+      {% endif %}
     </figure>
-  {/block:Photo}
+  {% else %}
   {block:Video}
     <figure class="content video">
       {Video-500}
