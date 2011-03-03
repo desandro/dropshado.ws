@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>api</title>
+
+  <style media="screen">
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      padding: 20px;
+    }
+    
+    input {
+      width: 800px;
+      font-size: 16px;
+    }
+    
+    div {
+      margin-bottom: 40px;
+      font: 12px monospace;
+    }
+    
+    pre {
+      padding: 1.0em;
+      word-wrap: break-word;
+      background: #DDD;
+    }
+  </style>
+
+</head>
+<body>
+
+  <h1>api</h1>
+  
+  <script src="http://dropshado.ws/api/read/json?filter=none"></script>
+  
+  <script>
+    function init() {
+      var data = tumblr_api_read,
+          posts = data.posts,
+          fragment = document.createDocumentFragment();
+      console.log( data );
+      
+      for ( var i=0, len=posts.length; i<len; i++ ) {
+        var post = posts[i],
+            div = document.createElement('div'),
+            pre = document.createElement('pre'),
+            filenameInput = document.createElement('input'),
+            filename = post['date-gmt'].split(' ')[0],
+            content = [
+              '---', 
+              'generator: Tumblr Gem', 
+              'layout: default',
+              'type: ' + post.type
+            ],
+            typeContent = [];
+
+        if ( post.tags && post.tags.length ) {
+          content.push( 'tags: ' + post.tags.join(', ') );
+        }
+
+        switch ( post.type ) {
+          case 'regular' :
+            typeContent.push(
+              'format: markdown',
+              'title: ' + post['regular-title'].replace(/:/g,''),
+              '---',
+              post['regular-body'].replace(/</g,'&lt;')
+            );
+            break;
+          case 'link' :
+            var linkText = post['link-text'],
+                linkDescription = post['link-description']
+            if ( linkText ) {
+              typeContent.push( 'name: ' + linkText.replace(/:/g,'') );
+            }
+            if ( linkDescription ) {
+              typeContent.push( 'description: ' + linkDescription );
+            }
+            typeContent.push(
+              '---',
+              post['link-url']
+            );
+            break;
+          case 'quote' :
+            var quoteSource = post['quote-source']
+            if ( quoteSource ) {
+              typeContent.push('source: ' + quoteSource );
+            }
+            typeContent.push(
+              '---',
+              post['quote-text']
+            );
+            break;
+        }
+        
+        content = content.concat( typeContent );
+
+        pre.innerHTML = content.join('<br/>')
+        
+        filename += '-' + post.slug;
+        filename += ( post.type == 'link' || post.type == 'photo' ) ? '.txt' : '.mdown';        
+        filenameInput.value = filename;
+
+        div.appendChild( filenameInput );
+        div.appendChild( pre );
+        div.className = 'post';
+        fragment.appendChild( div );
+        
+      }
+      
+      document.body.appendChild( fragment );
+    }
+  
+    window.addEventListener( 'DOMContentLoaded', init, false );
+  </script>
+  
+  
+
+</body>
+</html>
