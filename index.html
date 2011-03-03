@@ -4,10 +4,11 @@ is_index: true
 ---
 
 {% include header.html %}
-
-  {% for post in paginator.posts %}
-    {% include post.html %}
-  {% endfor %}
+  <section id="posts">
+    {% for post in paginator.posts %}
+      {% include post.html %}
+    {% endfor %}
+  </section> <!-- #posts -->
   
   <nav id="pagination">
     {% if paginator.previous_page %}
