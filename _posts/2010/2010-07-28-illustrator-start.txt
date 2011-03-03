@@ -1,0 +1,16 @@
+---
+type: photo
+tags: Illustrator, Photoshop
+generator: Tumblr Gem
+
+layout: default
+
+caption: |
+        There is no flat perfect star shape in Photoshop, nor is there one in Illustrator.  Unbelievable.
+
+        Next time you need to make a perfect 5 pointed star in Illustrator use 100px and 38.2px.  500px and 191px works as well (alas 191 is a prime!).
+
+        I know this 'cause I just spent 30 minutes doing the trig.
+
+---
+http://29.media.tumblr.com/tumblr_l6afm66Ctk1qashpfo1_500.png

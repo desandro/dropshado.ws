@@ -1,0 +1,12 @@
+---
+name: Firefox 4 -moz-any() selector grouping ✩ Mozilla Hacks – the Web developer blog
+type: link
+tags: CSS, Firefox
+generator: Tumblr Gem
+
+layout: default
+
+description: 
+
+---
+http://hacks.mozilla.org/2010/05/moz-any-selector-grouping/

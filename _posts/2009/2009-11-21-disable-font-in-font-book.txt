@@ -1,0 +1,10 @@
+---
+type: photo
+generator: Tumblr Gem
+
+layout: default
+
+click-through-url: http://www.flickr.com/photos/nemoorange/4118371572/
+
+---
+http://28.media.tumblr.com/tumblr_kth8hhCoWC1qashpfo1_500.jpg
