@@ -1,0 +1,8 @@
+---
+layout: default
+type: link
+tags: TextMate, Ryan Stout
+name: jezdez's textmate-missingdrawer at master - GitHub
+description: Via [Ryan Stout](http://www.agileproductions.com/)
+---
+https://github.com/jezdez/textmate-missingdrawer

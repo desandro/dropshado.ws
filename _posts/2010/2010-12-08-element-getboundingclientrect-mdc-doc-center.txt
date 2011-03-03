@@ -1,0 +1,11 @@
+---
+layout: default
+type: link
+tags: js
+name: element.getBoundingClientRect - MDC Doc Center
+description: |
+            > The returned value is a TextRectangle object, which contains read-only `left`, `top`, `right` and `bottom` properties describing the border-box, in pixels, with the top-left relative to the top-left of the viewport
+            
+            Nice way to get the absolute position of any element in the DOM. 
+---
+https://developer.mozilla.org/en/DOM:element.getBoundingClientRect
