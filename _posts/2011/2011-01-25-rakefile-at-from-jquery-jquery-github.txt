@@ -1,0 +1,8 @@
+---
+layout: default
+type: link
+tags: rake
+name: Rakefile at from jquery/jquery - GitHub
+description: Last version of the jQuery Rakefile. It was [subsequently removed](http://github.com/jquery/jquery/commit/d503845d0cf45632c0d7c3542ffd1b19257a8e5e). I'm saving this for posterity.  Decent reference for minification and file concatenation with Rake.
+---
+http://github.com/jquery/jquery/blob/9c76ac4f6d295a5b593048e54b4c4231c092e58a/Rakefile

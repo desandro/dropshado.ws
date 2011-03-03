@@ -1,0 +1,14 @@
+---
+generator: Tumblr Gem
+layout: default
+type: link
+tags: jquery, docs
+name: jQAPI - Alternative jQuery Documentation
+description: |
+            Years ago, when jQuery was still young, its website was notorious for its reliability. Back then, I dreamt of a way to download the docs so I could always reference it offline.
+            
+            jQAPI has delivered.  You'll need to be running it with MAMP for the navigation to work.
+            
+            Via [Kyle Neath](http://warpspire.com/talks/documentation/)
+---
+http://jqapi.com/

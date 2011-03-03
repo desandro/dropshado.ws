@@ -1,0 +1,21 @@
+---
+layout: default
+type: link
+tags: Ben Schwarz, terminal
+name: SSH and SCP Howto, tips & tricks « Linux Tutorial Blog
+description: |
+            Regarding yesterday's SFTP over Terminal, SCP is what I was looking for. Thanks [Ben Schwarz for the tip](https://twitter.com/benschwarz/status/30616965882056705).
+
+            > The scp command allows you to copy files over ssh connections. This is pretty useful if you want to transport files between computers...
+
+            To upload
+
+                $ scp examplefile user@mydomain.com:/path/to/
+
+            To download 
+
+                $ scp user@mydomain.com:/path/to/examplefile .
+
+
+---
+http://www.linuxtutorialblog.com/post/ssh-and-scp-howto-tips-tricks

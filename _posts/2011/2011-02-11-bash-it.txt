@@ -1,0 +1,12 @@
+---
+generator: Tumblr Gem
+layout: default
+type: link
+tags: terminal, John Schulz
+name: bash-it
+description: |
+            A big ol' collection of aliases and goodies for Terminal. Boasts an impressive theming functionality built by [John Schulz](https://github.com/jfsiii), which makes sense all that [gobbledigook from a couple months ago](http://dropshado.ws/post/1264042377/coloring-the-terminal-prompt).
+            
+            [Here's my theme](https://gist.github.com/820599) which outputs full path in blue, then which git branch you're working on in yellow.  It's hot.
+---
+https://github.com/revans/bash-it

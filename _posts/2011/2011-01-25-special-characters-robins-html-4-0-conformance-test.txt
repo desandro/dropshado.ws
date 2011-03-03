@@ -1,0 +1,7 @@
+---
+layout: default
+type: link
+name: Special Characters [Robin’s HTML 4.0 Conformance Test]
+description: Details on soft hyphen `&shy;`, zero-width spaces `&#8203;` and ligatures.
+---
+http://www.robinlionheart.com/stds/html4/spchars

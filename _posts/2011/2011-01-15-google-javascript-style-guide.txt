@@ -1,0 +1,11 @@
+---
+layout: default
+type: link
+tags: style guide, js
+name: Google JavaScript Style Guide
+description: |
+            Always good to gloss over code style guides. This one advocates single quotes over double.
+            
+            Something's fishy about this one. It gives explicit instructions on how to open up collapsable dialogs (This doc is for JS developers, right?). Its source is XML. It has no global nav - no link back to its parent, [google-styleguide](http://google-styleguide.googlecode.com/). Maybe it's all a sign that Google's devs are still tinkering with it — or maybe it was written years ago and has been collecting dust since.
+---
+http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
