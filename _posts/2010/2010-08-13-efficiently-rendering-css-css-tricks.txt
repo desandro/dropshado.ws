@@ -1,0 +1,8 @@
+---
+layout: default
+type: link
+tags: css, optimization
+name: Efficiently Rendering CSS | CSS-Tricks
+description: Via [HTML5 Boilerplate](http://html5boilerplate.com/)
+---
+http://css-tricks.com/efficiently-rendering-css/

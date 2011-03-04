@@ -1,0 +1,13 @@
+---
+layout: default
+type: link
+tags: js
+name: window.getComputedStyle - MDC
+description: |
+            > `getComputedStyle()` returns the computed style of an element. Computed style represents the final computed values of all CSS properties for the element.
+
+                var style = window.getComputedStyle(element, pseudoElt);
+
+            Whereas `element.style` returns the styles that have been _explicitly_ set, `getComputedStyle(element)` returns all the styles that the browser renders for an element. Useful for getting inherited styles.
+---
+https://developer.mozilla.org/en/DOM/window.getComputedStyle

@@ -1,0 +1,11 @@
+---
+layout: default
+type: link
+tags: css, webkit
+name: Safari CSS Reference Supported CSS Properties > Additional Unsupported Properties
+description: |
+    > WebKit provides partial support for a number of properties that are not supported for developer use. This list may include: ... Properties that are in a very early stage of development and are not really usable yet.
+
+    Title might as well be "CSS Bad-ass-ery Be Found Here."
+---
+http://developer.apple.com/safari/library/documentation/AppleApplications/Reference/SafariCSSRef/Articles/StandardCSSProperties.html#//apple_ref/doc/uid/TP30001266-UnsupportedProperties

@@ -1,0 +1,11 @@
+---
+layout: default
+type: link
+tags: git
+name: How to merge a specific commit in git - Stack Overflow
+description: |
+            [VonC](http://stackoverflow.com/questions/881092/how-to-merge-a-specific-commit-in-git/881112#881112)
+    
+            > [`git cherry-pick`](http://www.kernel.org/pub/software/scm/git/docs/git-cherry-pick.html) should be your answer here.
+---
+http://stackoverflow.com/questions/881092/how-to-merge-a-specific-commit-in-git

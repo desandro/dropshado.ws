@@ -1,0 +1,8 @@
+---
+layout: default
+type: link
+tags: js, reference
+name: JavaScript Reference - MDC
+description: I'm always searching for basic documentation on string, array and object methods. The Mozilla Developer Center is both well designed and concise.
+---
+https://developer.mozilla.org/en/JavaScript/Reference

@@ -1,0 +1,20 @@
+---
+layout: default
+type: regular
+tags: markup, HTML entities, Tumblr, Typography
+format: markdown
+title: Minutiæ
+
+---
+[adam j.sontag](http://twitter.com/ajpiano/status/25907892669):
+
+> just found dropshado.ws via @[paul_irish](http://twitter.com/paul_irish) .... pretty sure you need an "e" on that "minutia" ;)
+
+Several items of note on this one.
+
+ - Mr. Sontag is correct. [_Minutia_](http://dictionary.reference.com/browse/minutia) is the singular form. _Minutiae_ is plural. I wish to use the plural form in the subtitle. 
+ - After reading several thousand pages worth of the work of Neal Stephenson, I will pounce on any opportunity to use a word which has a derivation with _æ_. 
+ - The HTML entity for _æ_ is `æ`.
+ - Tumblr appropriately parsed the HTML entity from the subtitle field into the markup of the template.
+ - In the title field for this post, I had to enter `Minutiæ`.  When I first tried `Minutiæ` the HTML entity was not parsed.
+ - While _æ_ is a ligature of sorts, it is more appropriately considered a character like other vowels A, E, I, O, U.  [Wikipedia classifies Æ](http://en.wikipedia.org/wiki/%C3%86) as a [grapheme](http://en.wikipedia.org/wiki/Grapheme). I'm sure any typophile can put me in my place about this.

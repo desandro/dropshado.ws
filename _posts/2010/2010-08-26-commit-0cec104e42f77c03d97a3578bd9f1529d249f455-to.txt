@@ -1,0 +1,18 @@
+---
+layout: default
+type: link
+tags: webkit, css, typography
+name: Commit 0cec104e42f77c03d97a3578bd9f1529d249f455 to paulirish's html5-boilerplate - GitHub
+description: 
+    > no more `-webkit-font-smoothing: antialiased;`
+    > 
+    > We even removed this from the html5boilerplate.com.. made monospace too thin.
+    > 
+    > More:
+    >
+    > http://peterc.org/blog/2010/235-webkit-font-smoothing-antialiased-is-shit.html
+    >
+    > http://www.usabilitypost.com/2010/08/26/font-smoothing/
+
+---
+http://github.com/paulirish/html5-boilerplate/commit/0cec104e42f77c03d97a3578bd9f1529d249f455

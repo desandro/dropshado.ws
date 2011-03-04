@@ -1,0 +1,11 @@
+---
+layout: default
+type: link
+tags: Google Chrome
+name: Manage search engine options  Search tools - Google Chrome Help
+description: Since switching to Chrome a couple months ago, the one feature I've been desperately missing was Quick Searches. Fortunately there is a way to implement keyword searches through the Preferences, albeit not as slick as Firefox's contextual menu. You'll have to manually enter in the search URL.
+
+
+
+---
+http://www.google.com/support/chrome/bin/answer.py?hl=en&answer=95653

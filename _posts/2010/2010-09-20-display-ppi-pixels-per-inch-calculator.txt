@@ -1,0 +1,7 @@
+---
+layout: default
+type: link
+tags: pixels
+name: Display PPI (Pixels Per Inch) Calculator
+---
+http://thirdculture.com/joel/shumi/computer/hardware/ppicalc.html

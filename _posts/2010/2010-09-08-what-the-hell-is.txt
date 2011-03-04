@@ -1,0 +1,18 @@
+---
+layout: default
+type: link
+tags: js
+name: What the hell is ~~?
+description: |
+            > __MR LISTENER wrote:__
+            > 
+            > What the hell is `~~`? As in particle.js ->
+            > 
+            >     var colString = "rgba(" + ~~col.red + "," + ~~col.green + "," + ~~col.blue + "," + col.alpha.toFixed(2) + ")";
+            > 
+            > __MR SPEAKER wrote:__
+            > 
+            > Hey Mr Listener… that’s just a lil’ trick: the `~` is JavaScript’s bitwise NOT operator. Applying it twice (NOT NOT) is just a cheeky way of doing a `Math.floor` for positive numbers. But it’s waaaay faster than `Math.floor` (and just slightly faster than `<<0`) – which is important if you are trying to update 300 particles every frame ;)
+
+---
+http://www.mrspeaker.net/2009/12/03/particle-system-with-html5-canvas/#comment-1579

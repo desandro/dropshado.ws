@@ -1,0 +1,8 @@
+---
+layout: default
+type: link
+tags: firebug, console
+name: Firebug and Logging  Firebug
+description: Elaborates on console functionality
+---
+http://getfirebug.com/logging

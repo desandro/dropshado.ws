@@ -1,0 +1,15 @@
+---
+layout: default
+type: link
+tags: css, media queries, iphone
+name: How to combo media features in CSS media queries
+description: |
+            Take a look at Examples XXIV and XXV
+
+                @media screen and (min-width: 400px) and (max-width: 700px) { … }
+
+            Here's how I target iPhones in portrait orientation:
+
+                @media screen and (orientation: portrait) and (max-device-width: 480px) { ... }
+---
+http://www.w3.org/TR/css3-mediaqueries/#width

@@ -1,0 +1,7 @@
+---
+layout: default
+type: link
+tags: js
+name: What does the !! operator (double exclamation point) mean in JavaScript? - Stack Overflow
+---
+http://stackoverflow.com/questions/1406604/what-does-the-operator-double-exclamation-point-mean-in-javascript

@@ -1,0 +1,11 @@
+---
+layout: default
+type: link
+tags: js, IE
+name: Array.indexOf in Internet Explorer
+description: |
+            I implemented the [indexOf Array method](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/indexOf) in Masonry v1.3.0 which was breaking support for IE 6-8. Whoops.
+            
+            Via [Ken Mickles.](http://github.com/desandro/masonry/issues#issue/21/comment/398523)
+---
+http://soledadpenades.com/2007/05/17/arrayindexof-in-internet-explorer/

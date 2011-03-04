@@ -1,0 +1,8 @@
+---
+layout: default
+type: quote
+tags: js, jquery
+source: |
+      [Plugins/Authoring - jQuery JavaScript Library](http://docs.jquery.com/Plugins/Authoring#Summary_and_Best_Practices)
+---
+`jQuery.fn` is pronounced _jQuery effin'_

@@ -1,0 +1,11 @@
+---
+layout: default
+type: link
+tags: jquery, performance
+name: What is the most efficient way to create HTML elements using jQuery? - Stack Overflow
+description: |
+
+            > I use $(document.createElement('div')); Seems fastest to me because jQuery doesn't have to identify it as an element and create the element itself.
+
+---
+http://stackoverflow.com/questions/327047/what-is-the-most-efficient-way-to-create-html-elements-using-jquery

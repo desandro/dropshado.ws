@@ -1,0 +1,8 @@
+---
+layout: default
+type: link
+tags: firebug, web inspector, console
+name: Firebug Console API
+description: Aside from `console.log` there are other commands such as `console.warn` or `console.error` which display icons next to message. These work for Firebug and the WebKit Inspector.
+---
+http://getfirebug.com/wiki/index.php/Console_API
