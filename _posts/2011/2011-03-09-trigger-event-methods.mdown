@@ -2,7 +2,7 @@
 
 title: Trigger event methods
 type: regular
-tags: js. hasfiddle
+tags: js, hasfiddle
 format: markdown
 generator: Tumblr Gem
 
