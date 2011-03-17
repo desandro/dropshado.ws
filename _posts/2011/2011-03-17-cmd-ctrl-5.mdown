@@ -1,0 +1,18 @@
+---
+
+title: Arrange icons by kind
+type: regular
+tags: key command, OS X
+format: markdown
+generator: Tumblr Gem
+
+layout: default
+
+---
+
+My desktop gets messy. This cleans it up a bit, grouping items by filetype, folders first.
+
+With the desktop focused: Finder &rsaquo; View &rsaquo; Arrange By &rsaquo; Kind. Or by key command &#x2318;&#x2303;5
+
+![Arrange By Kind screenshot](http://media.tumblr.com/tumblr_li7l8gDREe1qan2hw.png)
+
