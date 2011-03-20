@@ -3,11 +3,7 @@ layout: nil
 is_index: true
 ---
 
-{% if paginator.page == 1 %}
   {% assign root_path = '' %}
-{% else %}
-  {% assign root_path = '../' %}
-{% endif %}
 
 {% include header.html %}
   <section id="posts">
