@@ -4,7 +4,7 @@ is_index: true
 ---
 
 {% if paginator.page == 1 %}
-  {% assign root_path = '' %}
+  {% capture root_path %}{% endcapture %}
 {% else %}
   {% assign root_path = '../' %}
 {% endif %}
