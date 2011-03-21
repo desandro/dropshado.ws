@@ -19,9 +19,9 @@ is_index: true
   <nav id="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        {% assign previous_link = '/' %}
+        {% assign previous_link = root_path %}
       {% else %}
-        {% capture previous_link %}../page{{ paginator.previous_page }}{% endcapture %}
+        {% capture previous_link %}{{ root_path }}page{{ paginator.previous_page }}{% endcapture %}
       {% endif %}
       <div class="previous">
         <a href="{{ previous_link }}">Previous</a>
@@ -29,7 +29,7 @@ is_index: true
     {% endif %}
     {% if paginator.next_page %}
       <div class="next">
-        <a href="/page{{ paginator.next_page }}">Next</a>
+        <a href="{{ root_path }}page{{ paginator.next_page }}">Next</a>
       </div>
     {% endif %}
     <div class="current">
