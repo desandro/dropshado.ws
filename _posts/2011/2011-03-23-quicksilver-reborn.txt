@@ -1,0 +1,12 @@
+---
+name: Quicksilver reborn
+type: link
+tags: Quicksilver
+generator: Tumblr Gem
+
+layout: default
+
+description: Quicksilver lives on thanks to open source community development. I'm running B58 and the chromed windows &mdash; Preferences, Triggers, etc. &mdash; are all working again.
+
+---
+http://qsapp.com/
