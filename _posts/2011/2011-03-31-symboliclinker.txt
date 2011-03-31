@@ -1,0 +1,12 @@
+---
+name: SymbolicLinker - Contextual menu creates symbolic links in Finder
+type: link
+tags: OS X
+generator: Tumblr Gem
+
+layout: default
+
+description:  Yeah, I can create symlinks in Terminal, but after using it one time, I'm loving being able to use a GUI for symlinking. Creating, dragging, and dropping keeps it simple stupid for me and I don't have to remember the syntax or filepaths.
+
+---
+http://www.macupdate.com/app/mac/10433/symboliclinker
