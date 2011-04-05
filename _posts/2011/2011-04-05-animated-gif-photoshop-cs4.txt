@@ -1,0 +1,16 @@
+---
+name: How to open animated gifs in Photoshop CS4
+type: link
+tags: Photoshop
+generator: Tumblr Gem
+
+layout: default
+
+description: > To open animated gif in CS4 on a MAC:
+> 1. Go to open, select your GIF, then in the bottom left corner of the open file dialogue box select Quicktime Movie as the format, then open your GIF.
+> 2. You’ll need to open your animations window by going to window -> animation. This will bring up the time line.
+> 3. If you want to have all of the frames broken up into layers, click the options in the animation window, and select “Flatten Frames into Layers”.
+> This will give you access to all the frames as layers and you can now edit the GIF as though it was a movie.
+
+---
+http://grafikdesign.wordpress.com/2008/11/17/how-to-open-animated-gifs-in-photoshop-cs4/#comment-5298
