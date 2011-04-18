@@ -13,8 +13,8 @@ layout: default
 I relied on jQuery to handle getting and setting scroll position in [BeerCamp 2011](http://2011.beercamp.com), but after taking another look, its pretty easy to do with modern browsers.
 
     // get scroll position
-    var y = window.scrollX,
-        x = window.scrollY;
+    var x = window.scrollX,
+        y = window.scrollY;
     
     // set scroll position to x: 140, y: 700
     window.scrollTo( 140, 700 );
