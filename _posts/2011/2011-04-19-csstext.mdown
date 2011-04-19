@@ -1,0 +1,23 @@
+---
+
+title: cssText
+type: regular
+tags: js, hasfiddle
+format: markdown
+generator: Tumblr Gem
+
+layout: default
+
+---
+
+[MDC > DOM Reference > cssRule.cssText](https://developer.mozilla.org/en/DOM/cssRule.cssText):
+
+> **cssText** returns the actual text of the style rule.
+
+Found in [a fiddle by Divya Manian](http://jsfiddle.net/nimbu/kCuWh/).
+
+It's used like `element.style.cssText`. From what I understand, it's the equivalent of getting the string returned by `element.getAttribute('style')`. I haven't found a use-case for it yet.  `element.style` already returns a object.
+
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/desandro/TPw29/embedded/result,js,html"> </iframe>
+
+[View cssText fiddle](http://jsfiddle.net/desandro/TPw29/)
