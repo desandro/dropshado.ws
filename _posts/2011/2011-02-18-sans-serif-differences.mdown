@@ -15,7 +15,8 @@ Speaking of Helvetica, the current typography solution on the Boilerplate is to 
 + Chrome uses Helvetica Neue
 + Firefox uses Helvetica
 + Safari uses Helvetica
-+ Opera uses Lucida Grande
++ Opera 11.0 and earlier uses Lucida Grande
++ Opera 11.10 and later uses Helvetica (edited 19 Apr 2011 [thx Divya](https://twitter.com/nimbuin/status/60337694429020160) )
 
 [See sans-serif fiddle](http://jsfiddle.net/desandro/v7x55/)
 
