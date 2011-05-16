@@ -10,7 +10,7 @@ layout: default
 
 ---
 
-Every now and then I open up Firefox solely to select table cells with Ctrl+Click.
+Every now and then I open up Firefox solely to select table cells with Cmd+Click.
 
 <table>
   <tr><th>Turtle</th><th>Color</th><th>Weapon</th><th>Character</th></tr>
