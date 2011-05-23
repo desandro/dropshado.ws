@@ -1,0 +1,12 @@
+---
+name: Learn JavaScript | Mozilla Developer Network
+type: link
+tags: js, MDN
+generator: Tumblr Gem
+
+layout: default
+
+description: A collection of JavaScript reference articles. I'd recommend John Resig's Learning Advanced Javascript and Addy Osmani's Essential JavaScript Design Patterns for Beginners. Mozilla has been doing a phenomenal job of documenting the core technologies behind the web. In the past year alone, they have produced the essential go-to reference for JavaScript. w3schools no more! They have almost done too good of a job, as I had the darndest time re-finding this page.  It appears in the Learning section, completely separate from the Docs section.
+
+---
+https://developer.mozilla.org/en-US/learn/javascript
