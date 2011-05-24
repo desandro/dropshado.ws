@@ -1,6 +1,7 @@
 # Jekyll
 permalink: /post/:title.html
 paginate: 15
+exclude: [ theme.html ]
 
 # site-wide data
 name: dropshado.ws
