@@ -1,0 +1,15 @@
+---
+
+title: whois
+type: regular
+tags: 
+format: markdown
+generator: Tumblr Gem
+
+layout: default
+
+---
+
+`whois` is a command-line utility.
+
+    whois icanhascheezburger.com
