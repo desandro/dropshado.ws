@@ -2,7 +2,7 @@
 
 title: whois
 type: regular
-tags: 
+tags: Terminal, bash
 format: markdown
 generator: Tumblr Gem
 
