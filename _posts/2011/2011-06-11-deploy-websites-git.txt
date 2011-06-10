@@ -1,0 +1,12 @@
+---
+name: Deploying websites with Git
+type: link
+tags: git
+generator: Tumblr Gem
+
+layout: default
+
+description: This method is so killer. I've never been able to get a handle of Capistrano, rsync, etc, so I can appreciate how easy this is get going. The hardest part for me was setting up Git on my server.  Currently I'm employing the post-receive hook, which means I can push commits and then the server takes care of updating the site. I'm using this both on <a href="http://desandro.com">desandro.com</a> and <a href="http://desandro.com/demo">desandro.com/demo</a>.
+
+---
+http://philsturgeon.co.uk/blog/2010/02/Deploying-websites-with-Git
