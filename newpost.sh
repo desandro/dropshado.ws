@@ -1,9 +1,12 @@
 #!/bin/bash
 
 # creates a new post
-# format as _posts/YYYY/YYYY-MM-DD-filename.ext
-# usage
-# $ sh newpost.sh my-new-post-filename _posts/regular.mdown
+# usage:
+#
+#     $ ./newpost.sh my-new-post-filename _posts/regular.mdown
+#
+# creates _posts/YYYY/YYYY-MM-DD-my-new-post-filename.mdown
+# uses _posts/regular.mdown as a template
 
 if [[ $2 ]]; then
 	COPY_FILE=$2
