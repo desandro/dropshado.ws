@@ -23,4 +23,4 @@ POST_FILE=_posts/$(date "+%Y/%Y-%m-%d")-$1.$COPY_FILE_EXT
 echo new post: $POST_FILE
 cp $COPY_FILE $POST_FILE
 # open it
-$EDITOR $POST_FILE
+mate $POST_FILE
