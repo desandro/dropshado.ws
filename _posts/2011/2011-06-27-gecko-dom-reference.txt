@@ -1,0 +1,12 @@
+---
+name: Gecko DOM Reference
+type: link
+tags: js
+generator: Tumblr Gem
+
+layout: default
+
+description: Or, you can peruse the MDN's DOM reference, which has proper docs for <a href="https://developer.mozilla.org/en/DOM/element">Element</a>, <a href="https://developer.mozilla.org/en/DOM/Node">Node</a>, <a href="https://developer.mozilla.org/en/DOM/document">document</a>, etc.
+
+---
+https://developer.mozilla.org/en/Gecko_DOM_Reference
