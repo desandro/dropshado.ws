@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  {% if paginator.page == 1 %}{% else %}{% assign root_path = '../' %}{% endif %}
   <title>{% if page.title %}{{ page.title }} &middot; {% endif %} {{ site.name }} ! Jekyll twin</title>
   
-  <meta name="description" content="{{ site.description }}. By David DeSandro" /> 
+  <meta name="description" content="{{ site.description }}. By David DeSandro" />
+  
+  {% if paginator.page == 1 %}
+    {% assign link_path = '.' %}
+  {% else %}
+    {% assign root_path = '../' %}
+    {% assign link_path = '..' %}
+  {% endif %}
 
   <script src="http://use.typekit.com/uzs6xfu.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
