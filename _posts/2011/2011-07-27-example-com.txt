@@ -6,7 +6,7 @@ generator: Tumblr Gem
 
 layout: default
 
-description: <p><a href="http://en.wikipedia.org/wiki/Example.com">Example.com - Wikipedia</a></p> <blockquote><p>Example.com, example.net, example.org, and example.edu are second-level domain names reserved for documentation purposes and examples of the use of domain names.</p></blockquote> <p>Via <a href="https://github.com/paulirish/html5-boilerplate/issues/613">HTML5 Boilerplate issue 613</a></p>
+description: <p><a href="https://github.com/paulirish/html5-boilerplate/issues/613">Via Phize on HTML5 Boilerplate issue 613</a>, the proper example URL is <a href="http://example.com">example.com</a>. Other domains like <a href="http://domain.com">domain.com</a> will point to actual valid URLs, where as <a href="http://example.com">example.com</a> is reserved by ICANN.</p>
 
 ---
-http://www.iana.org/domains/example/
+http://example.com
