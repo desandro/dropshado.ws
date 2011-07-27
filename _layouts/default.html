@@ -1,11 +1,103 @@
-{% assign root_path = '../' %}
-{% include header.html %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  {% if paginator.page == 1 %}{% else %}{% assign root_path = '../' %}{% endif %}
+  <title>{% if page.title %}{{ page.title }} &middot; {% endif %} {{ site.name }} ! Jekyll twin</title>
+  
+  <meta name="description" content="{{ site.description }}. By David DeSandro" /> 
 
+  <script src="http://use.typekit.com/uzs6xfu.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  
+  <link rel="stylesheet" href="{{ root_path }}assets/style.css" />
 
-    {% assign post = page %}
-    
+  <link rel="alternate" type="application/rss+xml" title="dropshado.ws" href="http://feeds.feedburner.com/dropshadows" /> 
+
+</head>
+<body>
+
+  <div id="wrap">
+
+    <header id="page-header">
+      <hgroup>
+        <h1><a href="/">{{ site.name }}</a></h1>
+        <h2>{{ site.description }}</h2>
+        <h3>by David DeSandro</h3>
+      </hgroup>
+
+      <div class="options">
+        <div class="button"><a href="/archive">Archive</a></div>
+        <div class="button"><a href="http://feeds.feedburner.com/dropshadows">RSS feed</a></div>
+        <div class="button"><a href="http://twitter.com/dropshado_ws">Twitter</a></div>
+        <div class="button"><a href="http://dropshado.ws/">original Tumblr version</a></div>
+
+        <form id="search-field" action="/search" method="get">
+          <input type="search" name="q" value="" />
+        </form>
+      </div>
+
+    </header>
+
     <section id="posts">
-      {% include post.html %}
+      {% if paginator.page %}
+        {% for post in paginator.posts %}
+          {% include post.html %}
+        {% endfor %}
+      {% else %}
+        {% assign post = page %}
+        {% include post.html %}
+      {% endif %}
     </section> <!-- #posts -->
-    
-{% include footer.html %}
+
+    <nav id="pagination">
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+          {% assign previous_link = root_path %}
+        {% else %}
+          {% capture previous_link %}{{ root_path }}page{{ paginator.previous_page }}{% endcapture %}
+        {% endif %}
+        <div class="previous">
+          <a href="{{ previous_link }}">Previous</a>
+        </div>
+      {% endif %}
+      {% if paginator.next_page %}
+        <div class="next">
+          <a href="{{ root_path }}page{{ paginator.next_page }}">Next</a>
+        </div>
+      {% endif %}
+      <div class="current">
+        Page {{ paginator.page }} of {{ paginator.total_pages }}
+      </div>
+    </nav>
+
+    <footer id="site-footer">
+      <ul>
+        <li><a href="http://desandro.com/">desandro.com</a></li>
+        <li><a href="http://twitter.com/desandro">@desandro</a></li>
+        <li><a href="http://github.com/desandro">github.com/desandro</a></li>
+        <li><a href="http://jsfiddle.net/user/desandro/fiddles/">desandro&rsquo;s JS Fiddles</a></li>
+      </ul>
+    </footer>
+
+  </div><!-- #wrap -->
+
+  <script src="{{ root_path }}assets/prettify.min.js"></script>
+  <script>
+    // syntax highlighting
+    window.addEventListener('load', prettyPrint, false);
+
+    // Google Analytics
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-592624-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</body>
+</html>
