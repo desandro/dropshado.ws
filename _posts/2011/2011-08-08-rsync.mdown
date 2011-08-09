@@ -1,0 +1,54 @@
+---
+
+title: rsync
+type: regular
+tags: rsync
+format: markdown
+generator: Tumblr Gem
+
+layout: default
+
+---
+
+A while back, I was looking for a command line replacement for FTP. Even with the [best FTP app out there](http://panic.com/transmit/), dragging and dropping files can get tedious, especially for little updates that you just want to see on the remote server (yeah, you can sync in Transmit... but you still have to open the app and whatnot).
+
+In review, [SFTP is decent](http://dropshado.ws/post/2942737420/sftp-from-terminal) if you want to browse around the remote server. [SCP is quick and easy](http://dropshado.ws/post/2961628574/ssh-and-scp-howto-tips-tricks-linux-tutorial-blog) for uploading a single file. But if you're looking to sync-up a whole directory, rsync is the way to go.
+
+Because rsync is such an old utility, I had some trouble finding a decent tutorial or blog post. [The best reference is its `man`](http://www.samba.org/ftp/rsync/rsync.html). So long as you have SSH access, using rsync is fairly straight forward. To upload:
+
+    rsync -avz /local/myproject/ user@server:/remote/myproject
+
+To download:
+
+    rsync -avz user@server:/remote/myproject/ /local/myproject/
+
+Looking at the arguments, `-a` syncs all subdirectories, `-z` compresses the transfer, and `-v` makes the procedure verbose.
+
+> This would recursively transfer all files from the directory src/bar on the machine foo into the /data/tmp/bar directory on the local machine. The files are transferred in "archive" mode, which ensures that symbolic links, devices, attributes, permissions, ownerships, etc. are preserved in the transfer. Additionally, compression will be used to reduce the size of data portions of the transfer.
+
+Note that the remote path in the download script has a trailing `/`.
+
+> A trailing slash on the source changes this behavior to avoid creating an additional directory level at the destination. You can think of a trailing / on a source as meaning "copy the contents of this directory" as opposed to "copy the directory by name."
+
+I'm using this command in a couple [li'l bash scripts](http://dropshado.ws/post/8472300430/lil-bash-scripts) to deploy projects to my remote server. Here's [demo/deploy.sh](https://github.com/desandro/demo/blob/a7468d147/deploy.sh)
+
+    #!/bin/bash
+    rsync -avz --exclude '.git' --exclude '*.sh' ./ $BERNA:~/www/demo
+
+The `--exclude` argument specifies which files to not sync. For [desandro.com/deploy.sh](https://github.com/desandro/desandro.com/blob/4b7bedaadae/deploy.sh), I use `--exclude-from` and a separate file [exclude.txt](https://github.com/desandro/desandro.com/blob/4b7bedaadae/exclude.txt). (`$BERNA` is a local alias I have `user@server`, so I can keep my username and server semi-private.)
+
+I use this following script, `sync.sh`, upload and download:
+
+    #!/bin/bash
+    
+    REMOTE=user@server:remote/dir
+    
+    if [ "$1" == 'down' ]; then
+    	PATHS="$REMOTE/ ./"
+    else
+    	PATHS="./ $REMOTE"
+    fi
+    
+    rsync -avz --exclude 'ignoreme.txt' $PATHS
+
+`./sync.sh` uploads, and `./sync.sh down` downloads.
