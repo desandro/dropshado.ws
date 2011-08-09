@@ -6,3 +6,4 @@ exclude: [ theme.html, newpost.sh ]
 # site-wide data
 name: dropshado.ws
 description: Front-end development minuti&aelig;
+tagline: "A catalog of resources and tips I learn, discover and use in my career as a front-end developer. You should start one yourself."
