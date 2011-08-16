@@ -1,0 +1,15 @@
+---
+name: TotalFinder
+type: link
+tags: app, OS X, Finder
+generator: Tumblr Gem
+
+layout: default
+
+description: |
+  TotalFinder is little app that adds a couple much-needed features to OS X's file browser, namely tabs and split windows. Finder windows tend to multiply as the day goes by. Having all Finder windows collected removes a lot of desktop clutter.
+
+  There are other Finder replacement apps out there, but this is the only one I've stuck with. It works as an extension to Finder, rather than a completely separate app. So I don't have to re-learn the <i>Go to Folder</i> key command. The Visor feature could be nice, but I've found it a bit buggy and unresponsive.
+
+---
+http://totalfinder.binaryage.com/
