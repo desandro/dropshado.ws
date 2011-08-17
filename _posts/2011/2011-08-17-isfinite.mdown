@@ -1,0 +1,41 @@
+---
+
+title: isFinite
+type: regular
+tags: javascript, John Schulz
+format: markdown
+generator: Tumblr Gem
+
+layout: default
+
+---
+
+[`isFinite()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/isFinite) is a top-level function (like `isNaN()`) that "Evaluates an argument to determine whether it is a finite number." [JFSIII](http://github.com/jfsiii) pointed this out to me, debugging my code. I got lazy checking a numeric value was not `undefined` and had something like this:
+
+    // check if value is defined
+    if ( value ) {
+      // do stuff..
+    }
+
+The problem was that `0` would be a proper value, but it is evaluated as falsey in the above conditional.
+
+    !!0
+    // >> false
+    !!isFinite(0)
+    // >> true
+
+    // check if value is numeric
+    if ( isFinite(value) ) {
+      // do stuff
+    }
+
+`isFinite()` does not specifically check if the value is a number, as it returns `true` for booleans.
+    
+    !!isFinite('foo')
+    // >> false
+    !!isFinite(function(){})
+    // >> false
+    !!isFinite(true)
+    // >> true
+    !!isFinite(false)
+    // >> true
