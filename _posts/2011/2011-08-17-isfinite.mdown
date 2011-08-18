@@ -31,11 +31,11 @@ The problem was that `0` would be a proper value, but it is evaluated as falsey 
 
 `isFinite()` does not specifically check if the value is a number, as it returns `true` for booleans.
     
-    !!isFinite('foo')
+    isFinite('foo')
     // >> false
-    !!isFinite(function(){})
+    isFinite(function(){})
     // >> false
-    !!isFinite(true)
+    isFinite(true)
     // >> true
-    !!isFinite(false)
+    isFinite(false)
     // >> true
