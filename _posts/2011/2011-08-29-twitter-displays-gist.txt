@@ -1,0 +1,10 @@
+---
+name: Twitter displays Gists
+type: link
+tags: Twitter, Gist, GitHub
+generator: Tumblr Gem
+
+layout: default
+
+---
+http://twitter.com/github/status/12602273234
