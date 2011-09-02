@@ -20,7 +20,8 @@ COPY_FILE_EXT=${COPY_FILE_NAME##*.}
 # create file
 POST_FILE=_posts/$(date "+%Y/%Y-%m-%d")-$1.$COPY_FILE_EXT
 
-echo new post: $POST_FILE
+echo new post:
+echo $POST_FILE
 cp $COPY_FILE $POST_FILE
 # open it
 mate $POST_FILE
