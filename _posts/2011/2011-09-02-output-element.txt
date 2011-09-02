@@ -1,0 +1,12 @@
+---
+name: output element
+type: link
+tags: HTML, HTML5, markup
+generator: Tumblr Gem
+
+layout: default
+
+description: <blockquote><p>The output element represents the result of a calculation.</p></blockquote> <p>Ideal to be used with range inputs, as <a href="http://miketaylr.com/code/html5-output-element-support.html">Mike Taylor demonstrates</a>. </p>
+
+---
+http://dev.w3.org/html5/spec/the-button-element.html#the-output-element
