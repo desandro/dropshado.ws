@@ -1,0 +1,12 @@
+---
+name: Stack Overflow - How do I edit an incorrect commit message in git
+type: link
+tags: git, Stack Overflow
+generator: Tumblr Gem
+
+layout: default
+
+description: <blockquote><pre><code>git commit --amend</code></pre></blockquote>
+
+---
+http://stackoverflow.com/questions/179123/how-do-i-edit-an-incorrect-commit-message-in-git
