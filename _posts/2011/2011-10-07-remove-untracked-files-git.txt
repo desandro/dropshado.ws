@@ -1,0 +1,12 @@
+---
+name: How do you remove untracked files from your git working copy? - Stack Overflow
+type: link
+tags: git, Stack Overflow
+generator: Tumblr Gem
+
+layout: default
+
+description: <pre><code>git clean -f</code></pre>
+
+---
+http://stackoverflow.com/questions/61212/how-do-you-remove-untracked-files-from-your-git-working-copy
