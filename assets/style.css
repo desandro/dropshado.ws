@@ -196,6 +196,10 @@ blockquote {
   border-left: 2px solid #E8E8E8;
 }
 
+article img, article iframe {
+  border: 2px solid #E8E8E8;
+}
+
 article aside {
   width: 180px;
   float: left;
