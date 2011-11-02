@@ -18,7 +18,7 @@ Along with [WebKit hardware-accelerated anti-aliasing](http://dropshado.ws/post/
 
 In WebKit, the first two elements will have fuzzy type and borders, as rendered elements don't exactly line up with pixels on the screen.
 
-Just to be thorough, I took a look at 2D subpixel translation transforms (i.e. `translateX(0.5px)`). The type seems to render appropriately with the subpixel values. However the borders don't look so good. They get positioned in between pixel spaces, rendering a 1px border with 2 pixels.
+Just to be thorough, I took a look at 2D subpixel translation transforms (i.e. `translateX(0.5px)`). In WebKit, the type seems to render appropriately with the subpixel values. However the borders don't look so good. They get positioned in between pixel spaces, rendering a 1px border with 2 pixels. Firefox doesn't have any issues with borders.
 
 ![subpixel transform positioning type rendering screenshot](http://i.imgur.com/Cgwjy.png)
 
