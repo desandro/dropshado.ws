@@ -1,0 +1,14 @@
+---
+name: instanceof
+type: link
+tags: javascript
+generator: Tumblr Gem
+
+layout: default
+
+description: <blockquote>The <code>instanceof</code> operator tests whether an object has in its prototype chain the <code>prototype</code> property of a constructor.</blockquote>
+
+<p>Like <code>typeof</code>, but for ballers who are working multiple classes and instances.</p>
+
+---
+https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special_Operators/instanceof_Operator
