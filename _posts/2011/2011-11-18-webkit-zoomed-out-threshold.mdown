@@ -1,6 +1,6 @@
 ---
 
-title: REGULAR_TITLE
+title: WebKit zoomed-out font-size threshold
 type: regular
 tags: WebKit, typography
 format: markdown
