@@ -1,0 +1,12 @@
+---
+name: Clear command from terminal in OS X
+type: link
+tags: bash, Terminal
+generator: Tumblr Gem
+
+layout: default
+
+description: <blockquote><kbd>Ctrl</kbd>+<kbd>U</kbd></blockquote>
+
+---
+http://superuser.com/questions/192490/clear-command-from-terminal-in-os-x
