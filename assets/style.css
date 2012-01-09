@@ -111,17 +111,30 @@ p, ul, ol, pre {
   -webkit-appearance: searchfield;
 }
 
+pre, code, kbd {
+  font-family: Monaco, Menlo, 'Courier New', monospace;
+  font-size: 12px;
+}
+
 pre {
   background: #111;
   padding: 1.0em;
-  line-height: 1.4em;
   overflow: auto;
   color: #FFF;
 }
 
 code {
-  font-family: Monaco, monospace;
-  font-size: 90%;
+
+}
+
+kbd {
+  border-style: solid;
+  border-color: #DDD;
+  border-width: 1px 2px 2px 1px;
+  font-style: normal;
+  padding: 0.1em 0.2em;
+  margin: 0 0.2em;
+  border-radius: 2px;
 }
 
 blockquote code { font-style: normal; }
