@@ -1,5 +1,5 @@
 ---
-name: document.createElement
+name: document.createComment
 type: link
 tags: JavaScript, MDN
 generator: Tumblr Gem
