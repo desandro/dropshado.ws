@@ -1,0 +1,12 @@
+---
+name: document.createElement
+type: link
+tags: JavaScript, MDN
+generator: Tumblr Gem
+
+layout: default
+
+description: <p>Yes, you can dynamically add comments to the DOM.</p>
+
+---
+https://developer.mozilla.org/en/DOM/document.createComment
