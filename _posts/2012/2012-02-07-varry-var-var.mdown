@@ -30,6 +30,6 @@ At first I gawked at this style, but after using it for two months, I'm sticking
 + Eliminates unnecessary git commit diffs, where a line has changed only because you changed a trailing semi-colon or comma.
 + Easier to read (IMO). `var` is a reserved keyword, so it jumps out when syntax highlighted.
 + Eliminates awkward tab spacing underneath the var. It only lines up if your tabs are 4 spaces wide.
-+ [Per JFSIII] Helps collaboration, other devs might miss the change of semi-colon and accidentally add a global variable.
++ (Per JFSIII) Helps collaboration, other devs might miss the change of semi-colon and accidentally add a global variable.
 
 If you're worried about bloating your code with all the superfluous `var`s, that should be taken care of when using a proper minifier.
