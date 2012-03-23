@@ -1,0 +1,12 @@
+---
+name: Git Book - Maintaining Git
+type: link
+tags: git
+generator: Tumblr Gem
+
+layout: default
+
+description: <p>What's this... <code>git gc</code> and <code>git fsck</code>? Oh, Git. Does anybody every really know you?</p>
+
+---
+http://book.git-scm.com/4_maintaining_git.html
