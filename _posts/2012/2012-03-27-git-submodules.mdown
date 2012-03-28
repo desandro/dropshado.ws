@@ -2,7 +2,7 @@
 
 title: Git submodules
 type: regular
-tags: git
+tags: git, Mathias Bynens
 format: markdown
 generator: Tumblr Gem
 
@@ -25,7 +25,13 @@ Both those commands trigger a change in the repo, changing `.gitmodules` and ref
 
 If anyone else clones the repo, they'll have to update and init the submodules as well.
 
+    git clone https://github.com/nclud/inflickity.git
+    cd inflickity
     git submodule update --init
+
+**EDIT** Or better yet, [clone the repo and pull in submodules with `git clone --recursive`](http://stackoverflow.com/questions/3796927/git-clone-submodule/4438292#4438292) (thx [Mathias](https://twitter.com/mathias/status/184969937364844544)):
+
+    git clone --recursive https://github.com/nclud/inflickity.git
 
 Now, the crazy-pants part. Per the [Git reference](http://schacon.github.com/git/git-submodule.html), `git submodule update`...
 
@@ -70,10 +76,12 @@ Not on any branch. Darnit. This will prevent the basic `git pull` from working, 
 
 Just like when adding submodules, if there are any new commits that were pulled for a submodule, you'll need to track that change in a commit for the parent repository.
 
-In review, my two go-to git submodule commands are:
+In review, my three go-to git submodule commands are:
 
     # starts it off
     git submodule update --init
+    # for anyone else cloning
+    git clone --recursive my-repo.git
     # pull in any fresh commits
     git submodule foreach 'git pull origin master'
 
