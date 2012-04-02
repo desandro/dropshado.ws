@@ -18,6 +18,7 @@ COPY_FILE_EXT=${COPY_FILE_NAME##*.}
 POST_FILE=_posts/$(date "+%Y/%Y-%m-%d")-$SLUG.$COPY_FILE_EXT
 
 # echo new post:
+echo $POST_FILE
 echo $POST_FILE | pbcopy
 cp $COPY_FILE $POST_FILE
 # open it
