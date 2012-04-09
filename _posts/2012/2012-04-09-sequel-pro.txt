@@ -1,0 +1,12 @@
+---
+name: Sequel Pro
+type: link
+tags: SQL, app
+generator: Tumblr Gem
+
+layout: default
+
+description: <p>Nice SQL database management app.</p>
+
+---
+http://www.sequelpro.com/
