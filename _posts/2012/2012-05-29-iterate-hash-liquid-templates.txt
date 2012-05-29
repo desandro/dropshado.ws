@@ -1,0 +1,18 @@
+---
+name: Iterate over hashes in liquid templates - Stack Overflow
+type: link
+tags: Stack Overflow, Liquid
+generator: Tumblr Gem
+
+layout: default
+
+description: |
+  <blockquote><p>When you iterate over a hash using a variable called <code>hash</code>, <code>hash[0]</code> contains the key and <code>hash[1]</code> contains the value on each iteration.</p>
+  <pre><code>{% for link_hash in page.links %}
+    {% for link in link_hash %}
+      <a href="{{ link[1] }}">{{ link[0] }}</a>
+    {% endfor %}
+  {% endfor %}</code></pre></blockquote>
+
+---
+http://stackoverflow.com/a/8303885/182183
