@@ -1,10 +1,8 @@
 ---
 
 title: YAML Front Matter syntax highlighting in TextMate
-type: regular
-tags: YAML, Markdown, TextMate, syntax highlighting, Jekyll
+tags: [ YAML, Markdown, TextMate, syntax highlighting, Jekyll ]
 format: markdown
-generator: Tumblr Gem
 
 layout: default
 

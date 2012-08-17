@@ -1,12 +1,12 @@
 ---
 name: LINK_TITLE
+url: LINK_URL
+
 type: link
 tags: 
-generator: Tumblr Gem
 
 layout: default
 
 description: 
 
 ---
-LINK_URL
