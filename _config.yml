@@ -1,7 +1,7 @@
 # Jekyll
 permalink: /post/:title.html
 paginate: 15
-exclude: [ theme.html, newpost.sh, node_modules, consumer.key, README* ]
+exclude: [ theme.html, newpost.sh, node_modules, tumblr-oauth.yml, README* ]
 
 # site-wide data
 name: dropshado.ws

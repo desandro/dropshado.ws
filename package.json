@@ -6,7 +6,9 @@
   "homepage": "http://dropshado.ws",
   "engines": { "node": ">= 0.8.0" },
   "dependencies": {
+    "underscore": "latest",
     "js-yaml": ">=1",
-    "tumblr": ">=0.0.4"
+    "oauth": ">=0.9",
+    "tumblrwks": ">=0.1"
   }
 }
