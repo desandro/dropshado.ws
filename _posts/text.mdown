@@ -1,0 +1,11 @@
+---
+
+title: TEXT_POST_TITLE
+tags: 
+format: markdown
+
+layout: default
+
+---
+
+TEXT_CONTENT
