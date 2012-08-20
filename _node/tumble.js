@@ -53,9 +53,14 @@ tumble.post = function post( filePath, done ) {
 
   blog.post( '/post', params, function( data ) {
     console.log( 'Post created! Post id: ' + data.green );
-    if ( done ) {
-      done();
-    }
+    if ( done ) done();
   });
 
+};
+
+tumble.getPosts = function( done ) {
+  blog.get( '/posts', { hostname: 'dsndev.tumblr.com', limit: 10 }, function( data ) {
+    console.log( data );
+    if ( done ) done();
+  })
 };

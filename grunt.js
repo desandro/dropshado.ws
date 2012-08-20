@@ -8,4 +8,9 @@ module.exports = function( grunt ) {
     // console.log( filePath );
   });
 
+  grunt.registerTask( 'getPosts', 'get last posts from blog', function() {
+    var done = this.async();
+    tumble.getPosts( done );
+  })
+
 };
