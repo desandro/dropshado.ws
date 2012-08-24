@@ -17,7 +17,9 @@ var defaultParams = {
   format: 'markdown'
 };
 
-function getTumblrPostParams( filePath ) {
+// returns
+//  { content: [String], frontMatter: [String], params: [Object] }
+function getTumblrPost( filePath ) {
   var post = fs.readFileSync(  filePath, 'utf8' );
   // extract YAML Front Matter from post
   var dashedSplit = post.indexOf('---') === 0 && post.split('---');
@@ -45,13 +47,17 @@ function getTumblrPostParams( filePath ) {
     params.tags = params.tags.join(',');
   }
 
-  return params;
+  return {
+    content: content,
+    frontMatter: frontMatter,
+    params: params
+  };
 }
 
 tumble.post = function post( filePath, done ) {
-  var params = getTumblrPostParams( filePath );
+  var tumblrPost = getTumblrPost( filePath );
 
-  blog.post( '/post', params, function( data ) {
+  blog.post( '/post', tumblrPost.params, function( data ) {
     console.log( 'Post created! Post id: ' + data.green );
     if ( done ) done();
   });
@@ -62,5 +68,5 @@ tumble.getPosts = function( done ) {
   blog.get( '/posts', { hostname: 'dsndev.tumblr.com', limit: 10 }, function( data ) {
     console.log( data );
     if ( done ) done();
-  })
+  });
 };
