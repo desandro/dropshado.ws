@@ -1,13 +1,6 @@
 <article>
   {% if page.is_index %}{% assign content = post.content %}{% endif %}
-  {% if post.type == 'regular' %}
-    <div class="content text">
-      {% if post.title %}<h1>{{ post.title }}</h1>{% endif %}
-      <div class="copy">
-        {{ content }}
-      </div>
-    </div>
-  {% elsif post.type == 'link' %}
+  {% if post.type == 'link' %}
     <div class="content link">
       <h1><a href="{{ content }}">{{ post.name }}</a></h1>
       {% if post.description %}
@@ -34,15 +27,20 @@
         <figcaption>{{ post.caption }}</figcaption>
       {% endif %}
     </figure>
-  {% else %}
-  {block:Video}
+  {% elsif post.type == 'video' %}
     <figure class="content video">
       {Video-500}
       {block:Caption}<figcaption>{Caption}</figcaption>{/block:Caption}
     </figure>
-  {/block:Video}
+  {% else %}
+    <div class="content text">
+      {% if post.title %}<h1>{{ post.title }}</h1>{% endif %}
+      <div class="copy">
+        {{ content }}
+      </div>
+    </div>
   {% endif %}
-  
+
   <aside>
     <time><a href="{{ link_path }}{{ post.url }}">{{ post.date | date:'%d %b %Y' }}</a></time>
     {% if post.tags %}
