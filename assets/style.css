@@ -151,7 +151,11 @@ a img {
   border: none;
 }
 
-
+hr {
+  border: none;
+  border-bottom: 2px solid #e8e8e8;
+  margin: 2.0em 0;
+}
 
 article {
 
@@ -188,7 +192,7 @@ float: left;
 
 article .content ul,
 article .content ol {
-  margin-left: 1.4em;
+  margin-left: 1.5em;
 }
 
 article .content li {
