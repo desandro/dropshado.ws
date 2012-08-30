@@ -9,6 +9,7 @@
     "underscore": "latest",
     "js-yaml": ">=1",
     "oauth": ">=0.9",
-    "tumblrwks": ">=0.1"
+    "tumblrwks": ">=0.1",
+    "express": "latest"
   }
 }
