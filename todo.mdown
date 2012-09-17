@@ -2,6 +2,3 @@ reformat old posts
 
 change jekyll template for new format
 
-make getting auth keys transparent
-
-add id to post file from tumblr response

@@ -1,7 +1,7 @@
 dropshado.ws
 ============
 
-Repository of all my posts to [dropshado.ws](http://dropshado.ws), a blog about front-end development minuti&aelig;. Posts are published with the [Tumblr gem](http://mwunsch.tumblr.com/post/441371943/tumblr-rb).
+Repository of all my posts to [dropshado.ws](http://dropshado.ws), a blog about front-end development minuti&aelig;. Posts are published with the [jumbyl](https://github.com/desandro/jumbyl).
 
 This repo has also been reverse-engineered to publish posts to [GitHub Pages via Jekyll](http://pages.github.com/). Take a look:
 
