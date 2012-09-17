@@ -6,9 +6,9 @@ var _ = require('underscore');
 var tumble = module.exports = {};
 
 // get consumerKey, consumerSecret, accessToken, accessSecret from file
-var authFile = fs.readFileSync( 'tumblr-oauth.yml', 'utf8' );
+var authFile = fs.readFileSync( '_jumbyl.yml', 'utf8' );
 var authKeys = yaml.load( authFile );
-var blog = new Tumblr( authKeys, "dsndev.tumblr.com" );
+var blog = new Tumblr( authKeys, authKeys.baseHostname );
 
 // console.log( authKeys );
 
