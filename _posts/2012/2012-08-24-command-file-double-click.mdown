@@ -2,10 +2,10 @@
 
 title: .command files can be double-clicked
 tags: [ bash, command line, OS X ]
-format: markdown
 
 layout: default
 
+id: '31703650180'
 ---
 
 From Chris Page on [Stack Overflow: How do I make this file.sh executable via double click?](http://stackoverflow.com/a/9650209/182183):
