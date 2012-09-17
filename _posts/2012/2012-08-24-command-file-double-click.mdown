@@ -10,7 +10,7 @@ id: '31703650180'
 
 From Chris Page on [Stack Overflow: How do I make this file.sh executable via double click?](http://stackoverflow.com/a/9650209/182183):
 
-> By default, *.sh files are opened in a text editor (Xcode or TextEdit). To create a shell script that will execute in Terminal when you open it, name it with the “command” extension, e.g., file.command. By default, these are sent to Terminal, which will execute the file as a shell script.
+> By default, .sh files are opened in a text editor (Xcode or TextEdit). To create a shell script that will execute in Terminal when you open it, name it with the “command” extension, e.g., file.command. By default, these are sent to Terminal, which will execute the file as a shell script.
 >
 > You will also need to ensure the file is executable, e.g.:
 >
