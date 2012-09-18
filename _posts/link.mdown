@@ -1,12 +1,10 @@
 ---
-name: LINK_TITLE
+title: LINK_TITLE
 url: LINK_URL
 
 type: link
 tags: 
 
 layout: default
-
-description: 
 
 ---
