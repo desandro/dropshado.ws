@@ -2,12 +2,10 @@
   {% if page.is_index %}{% assign content = post.content %}{% endif %}
   {% if post.type == 'link' %}
     <div class="content link">
-      <h1><a href="{{ content }}">{{ post.name }}</a></h1>
-      {% if post.description %}
-        <div class="copy">
-          {{ post.description }}
-        </div>
-      {% endif %}
+      <h1><a href="{{ post._url }}">{{ post.title }}</a></h1>
+      <div class="copy">
+        {{ content }}
+      </div>
     </div>
   {% elsif post.type == 'quote' %}
     <div class="content quote">
