@@ -1,6 +1,6 @@
 ---
 title: LINK_TITLE
-url: LINK_URL
+_url: LINK_URL
 
 type: link
 tags: 
