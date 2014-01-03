@@ -25,5 +25,5 @@ By default, [flex box](http://css-tricks.com/using-flexbox/) makes item elements
               align-items: flex-start;
     }
 
-<pre class="codepen" data-height="300" data-type="result" data-href="zhcKu" data-user="desandro" data-safe="true"><code></code><a href="http://codepen.io/desandro/pen/zhcKu">Check out this Pen!</a></pre>
+<pre class="codepen" data-height="300" data-type="result" data-href="zhcKu" data-user="desandro" data-safe="true"><code> </code><a href="http://codepen.io/desandro/pen/zhcKu">Check out this Pen!</a></pre>
 <script async="true" src="http://codepen.io/assets/embed/ei.js"> </script>
