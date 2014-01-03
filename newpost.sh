@@ -5,7 +5,7 @@
 echo "Creating new post"
 
 # get template
-echo "Enter template [ text.mdown, link.mdown, photo.txt, quote.mdown ]: "
+echo "Enter template [ text.md, link.md, photo.txt, quote.md ]: "
 read TEMPLATE
 read -p "Enter slug, i.e. my-post-slug: " SLUG
 
