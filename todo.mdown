@@ -1,4 +1,0 @@
-reformat old posts
-
-change jekyll template for new format
-
