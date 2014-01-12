@@ -5,4 +5,4 @@ Repository of all my posts to [dropshado.ws](http://dropshado.ws), a blog about 
 
 This repo has also been reverse-engineered to publish posts to [GitHub Pages via Jekyll](http://pages.github.com/). Take a look:
 
-[http://desandro.github.com/dropshado.ws](http://desandro.github.com/dropshado.ws)
+[desandro.github.io/dropshado.ws](http://desandro.github.io/dropshado.ws)
