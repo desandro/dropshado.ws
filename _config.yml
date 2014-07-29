@@ -1,5 +1,6 @@
 # Jekyll
 permalink: /post/:title.html
+markdown: kramdown
 paginate: 15
 exclude: [ theme.html, newpost.sh, node_modules, grunt.js, package.json, README* ]
 
