@@ -5,6 +5,7 @@ tags: [ CSS ]
 
 layout: default
 
+id: '93166549422'
 ---
 
 When an element is positioned partly outside the window AND that element does not have a width set, its text will wrap inside the window.
