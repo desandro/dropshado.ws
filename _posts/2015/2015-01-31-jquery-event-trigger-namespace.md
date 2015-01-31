@@ -26,8 +26,8 @@ They can also be used when triggering events, to specify where that event came f
 
 I'm using namespace triggering in [Flickity](http://flickity.metafizzy.co), as a way to distinguish Flickity's `select` event from the [native `select` event](https://developer.mozilla.org/en-US/docs/Web/Events/select).
 
-      // create jQuery event from original event object
-      var $event = jQuery.Event( event );
-      // set type, like select.flickity
-      $event.type = type + '.flickity';
-      this.$element.trigger( $event, args );
+    // create jQuery event from original event object
+    var $event = jQuery.Event( event );
+    // set type, like select.flickity
+    $event.type = type + '.flickity';
+    this.$element.trigger( $event, args );
