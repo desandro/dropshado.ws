@@ -20,6 +20,10 @@ id: '109695906602'
     // unbind alpha click listener only
     $element.off('click.alpha');
 
+**EDIT** **The rest of this post is false** I had thought I verified this, but alas, no. Triggering with a namespace will not trigger that event _without_ the namespace.
+
+---
+
 They can also be used when triggering events, to specify where that event came from.
 
     $element.trigger('click.pluginName')
